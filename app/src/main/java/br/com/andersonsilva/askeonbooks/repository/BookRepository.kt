@@ -22,7 +22,7 @@ class BookRepository(context:Context) {
     }
 
 
-    fun findAll(book:Book): List<Book> {
+    fun findAll(book:Book): List<Book>? {
         return mutableListOf <Book> ().apply {
             val cursor = db.rawQuery("SELECT * FROM $table", null)
             while (cursor.moveToNext()){
@@ -34,6 +34,12 @@ class BookRepository(context:Context) {
                 val genrer = cursor.getString(5)
                 add(Book(id, image,name, author,page, genrer))
             }
+            // cursor.close()
+            val result = cursor.moveToFirst()
+            if (!result) {
+                return null
+            }
+            val id = cursor.getLong(0)
             cursor.close()
         }
     }

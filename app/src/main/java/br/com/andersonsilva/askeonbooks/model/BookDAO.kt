@@ -12,12 +12,14 @@ class BookDAO(context:Context) : SQLiteOpenHelper(context,db_name,null,db_versio
     }
 
     override fun onCreate(db: SQLiteDatabase) {
-        db.execSQL("CREATE TABLE book (id INTAGER PRIMARY KEY AUTOINCREMENT, name TEXT, image TEXT, author TEXT, genre TEXT, pages TEXT)")
+        // db.execSQL("CREATE TABLE book (id INTAGER PRIMARY KEY AUTOINCREMENT, name TEXT, image TEXT, author TEXT, genre TEXT, pages TEXT)")
+        db.execSQL("CREATE TABLE $table_name (id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT,image TEXT, author TEXT, genre TEXT, pages TEXT)")
     }
 
     override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
         if(oldVersion < newVersion){
-            db.execSQL("DROP TABLE book")
+            // db.execSQL("DROP TABLE book")
+            db.execSQL("DROP TABLE $table_name")
             onCreate(db)
         }
     }

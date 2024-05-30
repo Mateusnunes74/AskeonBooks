@@ -112,8 +112,8 @@ fun AddBookScreen(navController: NavController){
                         pages = bookPages,
                         genrer = bookGenrer
                     )
+                    // val result: List<Book> = repository.findAll(book)
                     val repository =  BookRepository(localContext)
-                    val result: List<Book> = repository.findAll(book)
                     val id = repository.insert(book)
                     if(id > 0L){
                         scope.launch{
