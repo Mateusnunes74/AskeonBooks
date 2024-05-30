@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_field_password">Contraseña</string>
+    <string name="login_field_email">Correo electrónico</string>
+    <string name="login_button_enter">Ingressar</string>
+    <string name="login_text_first_option">Olvide mi contraseña</string>
+    <string name="login_text_second_option">¿No tengo mi cuenta? Crear</string>
+    <string name="placeholder_email">Escribe tu correo electrónico</string>
+    <string name="placeholder_password">Escribe tu contraseña</string>
+    <string name="placeholder_username">Ingrese su nombre de usuario</string>
+    <string name="login_field_username">Nombre de usuario</string>
+    <string name="home_add_message">Adicione nuevo libro</string>
+    <string name="user_key_password">Clave de usuario</string>
+    <string name="placeholder_user_key">Introduce tu clave de usuario</string>
+    <string name="home_title_screen">Catalogo de libros</string>
+    <string name="home_user_icon_description">Un icono de perfil de usuario</string>
+    <string name="home_example_image_description">Una imagen de fondo verde</string>
+    <string name="account_button_create">Crear</string>
+    <string name="account_title_screen">Crea una cuenta</string>
+    <string name="book_label_name">Nombre</string>
+    <string name="book_label_author">Autor</string>
+    <string name="book_label_pages">Paginas</string>
+    <string name="book_placeholder_author">Escribe el nombre del autor.</string>
+    <string name="book_placeholder_name">Escribe el nombre del libro.</string>
+    <string name="book_placeholder_pages">Introduzca el número de páginas</string>
+    <string name="book_button_add">Para agregar</string>
+    <string name="home_input_search">Buscar un libro</string>
+    <string name="drawer_genres_title">Géneros literarios</string>
+    <string name="recover_button_confirm">Confirmar</string>
+    <string name="login_title_screen">Acceso</string>
+    <string name="message_register_success" />
+    <string name="book_label_image">Imagen</string>
+    <string name="book_placeholder_image">Coloque el enlace de dirección de la imagen</string>
+    <string name="book_label_genrer">Género</string>
+    <string name="book_placeholder_genrer">Escribe el género del libro</string>
+</resources>
