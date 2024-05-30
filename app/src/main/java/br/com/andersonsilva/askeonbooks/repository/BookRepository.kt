@@ -21,7 +21,7 @@ class BookRepository(context:Context) {
         return db.insert(table,"",contentValues)
     }
 
-
+// meu pau
     fun findAll(book:Book): List<Book>? {
         return mutableListOf <Book> ().apply {
             val cursor = db.rawQuery("SELECT * FROM $table", null)
